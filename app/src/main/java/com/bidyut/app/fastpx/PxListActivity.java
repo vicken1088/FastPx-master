@@ -47,7 +47,7 @@ public class PxListActivity extends AppCompatActivity {
         mPxListView.setHasFixedSize(true);
 //        mPxListView.setLayoutManager(new GridLayoutManager(this, NUM_COLUMNS,
 //                GridLayoutManager.VERTICAL, false));
-        mPxListView.setLayoutManager(new StaggeredGridLayoutManager(3,
+        mPxListView.setLayoutManager(new StaggeredGridLayoutManager(4,
                 StaggeredGridLayoutManager.VERTICAL));
 
         final Call<SearchResults> results = service.searchPhotos("car");
